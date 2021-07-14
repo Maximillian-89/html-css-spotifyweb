@@ -11,29 +11,11 @@ body {
 }
 
 .container {
-    background-color: blueviolet;
     height: calc(100vh - 90px);
 }
 
 main {
-    height: 100%;
-}
-
-footer {
     display: flex;
-    justify-content: space-between;
-    height: 90px;
-    background-color: red;
-}
-
-.left-footer, .center-footer, .right-footer {
-    height: 10px;
-    background-color: blue;
-}
-
-.sidebar {
-    display: flex;
-    background-color: chocolate;
     height: 100%;
 }
 
@@ -46,35 +28,71 @@ footer {
     width: 80%;
     height: 100%;
 }
-.testpush
+/* Sidebar */
+.sidebar {
+    background-color: chocolate;
+    /* background-color: #000; */
+    height: 100%;
+}
+
+.sidebar-container {
+    display: flex;
+    width: 95%;
+    margin: 0px 15px;
+}
+
+.logo {
+    padding-top: 20px;
+    width: 125%;
+}
+/* Sidebar Top */
+/* .side-top, .side-center, .side-bottom {
+    display: flex;
+    flex-direction: column;
+} */
+
+
+.side-top>ul {
+    margin-top: 20px;
+    list-style: none;
+    line-height: 30px;
+}
+
+.side-top>ul>li>a {
+    text-decoration: none;
+    color: #6b6b6b;
+}
+
+.side-top>ul>li>a>img {
+    width: 25%;
+}
+
+.side-top>ul>li>.home {
+    color: #fff;
+}
+/* /Sidebar Top */
+/* Sidebar Center */
+.side-center>ul {
+    list-style: none;
+}
+
+.side-center>ul>li>a {
+    color: #6b6b6b;
+    text-decoration: none;
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* header {
-	height: 100px;
-    background-color: rgba(1, 1, 1, 0.5);
+header {
+	height: 90px;
+    background-color: rgba(1, 1, 1, 0.1);
 	display: flex;
 	justify-content: right;
 	align-items: center;
-	padding: 0 15px;
+	padding: 0 20px;
 }
 
 header>a {
@@ -82,7 +100,9 @@ header>a {
     color: #fff;
     border: 1px solid #fff;
     border-radius: 20px;
-    padding: 10px 30px;
+    padding: 12px 40px;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 nav>ul {
@@ -100,26 +120,27 @@ nav>ul>li>a {
     color: #7d7f84;
     text-decoration: none;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 12px;
 }
 
-.sidebar {
-    left: 0;
-    width: 250px;
-    background-color: #000;
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: #282828;
 }
 
-.sidebar-container {
-    display: block;
-    width: 80%;
-    margin: 0px 15px;
+.left-footer, .center-footer, .right-footer {
+    height: 10px;
+    background-color: blue;
 }
 
-.logo {
-    padding-top: 20px;
-    color: #fff;
-    width: 70%;
-}
+
+
+/* 
 
 .sidebar-container>ul>li>.home {
     color: #fff;
@@ -152,5 +173,5 @@ nav>ul>li>a {
 
 .playlist {
     color: #fff;
-} */
+} */ 
 
