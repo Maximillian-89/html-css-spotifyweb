@@ -29,11 +29,14 @@ main {
 }
 
 .column-right {
-    width: 100%;
+    width: calc(100% - 230px);
     height: 100%;
 }
 /* Sidebar */
 .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding-left: 10px;
     background-color: #000;
     height: 100%;
@@ -80,6 +83,7 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    color: #a3a3a3;
 }
 
 .adding-playlist {
@@ -89,6 +93,8 @@ main {
     background-color: #a3a3a3;
     display: inline-block;
     text-align: center;
+    color: #000;
+    margin-right: 10px;
 }
 
 .playlist-menu {
@@ -105,9 +111,17 @@ main {
 }
 /* /Sidebar Center */
 /* Sidebar Bottom */
+
+.side-bottom {
+    padding: 10px 10px 10px 0px;
+}
+
 .side-bottom>a {
     display: flex;
     align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
 }
 
 .side-bottom>a>img {
@@ -191,7 +205,9 @@ nav>ul>li>a {
 /* Footer */
 footer {
     display: flex;
+    position: fixed;
     z-index: 3;
+    width: 100%;
     justify-content: space-between;
     height: 90px;
     background-color: #282828;
