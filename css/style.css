@@ -34,14 +34,9 @@ main {
 }
 /* Sidebar */
 .sidebar {
-    background-color: chocolate;
-    /* background-color: #000; */
+    padding-left: 10px;
+    background-color: #000;
     height: 100%;
-}
-
-.sidebar-container {
-    width: 87%;
-    margin: 0px 15px;
 }
 
 .logo {
@@ -74,44 +69,80 @@ main {
 }
 /* /Sidebar Top */
 /* Sidebar Center */
+.side-center>h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.side-center>a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.adding-playlist {
+    height: 35px;
+    width: 35px;
+    font-size: 29px;
+    background-color: #a3a3a3;
+    display: inline-block;
+    text-align: center;
+}
+
+.playlist-menu {
+    overflow-y: auto;
+}
+
 .side-center>ul {
     list-style: none;
 }
 
 .side-center>ul>li {
-    margin-top: 15px;
-}
-
-.side-center>h2 {
-    margin-top: 10px;
-    font-size: 11px;
-    color: #fff;
-}
-
-.fa-plus-square {
-    font-size: 40px;
-    vertical-align: middle;
+    line-height: 29px;
+    font-size: 13px;
 }
 /* /Sidebar Center */
 /* Sidebar Bottom */
-.side-bottom {
-    align-content: flex-end;
+.side-bottom>a {
+    display: flex;
+    align-items: center;
+}
+
+.side-bottom>a>img {
+    width: 17px;
+    margin-right: 10px;
 }
 
 hr {
     width: 90%;    
 }
 
-.side-bottom>div {
-    width: 11%;
-    background-color: gray;
-    border-radius: 50%;
-    padding: 5px 9px;
+.user-profile {
+    display: flex;
+    align-items: center;
 }
 
+.user-profile>div {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: grey;
+    overflow: hidden;
+}
+
+.user-profile>h2 {
+    font-size: 15px;
+    color: #fff;
+}
 
 /* Column Right */
 header {
+    position: fixed;
+    z-index: 2;
+    right: 0;
     width: calc(100% - 230px);
 	height: 90px;
     background-color: rgba(1, 1, 1, 0.1);
@@ -128,6 +159,14 @@ header>a {
     padding: 12px 40px;
     font-size: 12px;
     font-weight: 500;
+}
+
+/* nav {
+    margin-top: 90px;
+} */
+
+nav {
+    margin-top: 90px;
 }
 
 nav>ul {
@@ -152,6 +191,7 @@ nav>ul>li>a {
 /* Footer */
 footer {
     display: flex;
+    z-index: 3;
     justify-content: space-between;
     height: 90px;
     background-color: #282828;
