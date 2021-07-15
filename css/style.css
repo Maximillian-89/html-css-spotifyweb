@@ -161,30 +161,3 @@ footer {
     height: 10px;
     background-color: blue;
 }
-
-
-
-/* 
-
-.sidebar-container>ul>li>.home {
-    color: #fff;
-}
-
-
-.sidebar-container>ul {
-    margin-top: 30px;
-    list-style: none;
-    line-height: 30px;
-}
-
-.sidebar-container>ul>li>a {
-    color: #6b6b6b;
-}
-
-.sidebar-container>ul>li>a>img {
-    width: 12%;
-}
-
-.sidebar-container>ul>li>span {
-    color: #7d7f84;
-}
