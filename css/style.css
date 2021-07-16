@@ -72,6 +72,12 @@ main {
 }
 /* /Sidebar Top */
 /* Sidebar Center */
+
+.side-center {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
 .side-center>h2 {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -216,4 +222,34 @@ footer {
 .left-footer, .center-footer, .right-footer {
     height: 10px;
     background-color: blue;
+}
+
+.left-footer>div {
+    display: flex;
+    align-items: center;
+}
+
+.left-footer>div>img {
+    height: 55px;
+    width: 55px;
+    margin: 14px 10px 0px 10px;
+}
+
+.player-song-info>h2>a {
+    color: #fff;
+    font-size: 15px;
+}
+
+.player-song-info>p>a {
+    font-size: 10px;
+    font-weight: 700;
+    color: gray;
+}
+
+.player-icons {
+    margin-left: 35px;
+}
+
+.player-icons>a:first-child {
+    margin-right: 10px;
 }
