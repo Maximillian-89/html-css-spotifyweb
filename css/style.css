@@ -10,6 +10,18 @@ body {
     background-color: #141922;
 }
 
+.side-top>ul>li>a:hover, .playlist-menu>li>a:hover, .side-center>a:hover, .side-bottom>a:hover, nav>ul>li>a:hover, .white-hover:hover {
+    color: #fff;
+}
+
+.zoom-hover:hover {
+    transform: scale(1.1);
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;
 }
@@ -253,3 +265,8 @@ footer {
 .player-icons>a:first-child {
     margin-right: 10px;
 }
+
+.player-icons>a {
+    color: grey;
+}
+
