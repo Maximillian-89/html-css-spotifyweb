@@ -22,6 +22,10 @@ body {
     text-decoration: underline;
 }
 
+.no-list {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -217,12 +221,10 @@ nav>ul>li>a {
     font-weight: 700;
     font-size: 12px;
 }
-
-
-
 /* Footer */
 footer {
     display: flex;
+    align-items: center;
     position: fixed;
     z-index: 3;
     width: 100%;
@@ -230,12 +232,7 @@ footer {
     height: 90px;
     background-color: #282828;
 }
-
-.left-footer, .center-footer, .right-footer {
-    height: 10px;
-    background-color: blue;
-}
-
+/* Left Footer */
 .left-footer>div {
     display: flex;
     align-items: center;
@@ -257,16 +254,32 @@ footer {
     font-weight: 700;
     color: gray;
 }
-
-.player-icons {
-    margin-left: 35px;
+.player-icons-left {
+    margin-left: 40px;
 }
 
-.player-icons>a:first-child {
+.player-icons-left>a:first-child {
     margin-right: 10px;
 }
 
-.player-icons>a {
+.player-icons-left>a {
     color: grey;
 }
+/* /Left Footer */
+/* Center Footer */
+.player-icons-center>ul {
+    display: flex;
+}
 
+.player-icons-center>ul>li {
+    margin-right: 10px;
+}
+
+.player-icons-center>ul>li>a {
+    color:#fff;
+    font-size: 17px;
+}
+
+#player {
+    font-size: 30px;
+}
