@@ -43,11 +43,6 @@ main {
     width: 230px;
     height: 100%;
 }
-
-.column-right {
-    width: calc(100% - 230px);
-    height: 100%;
-}
 /* Sidebar */
 .sidebar {
     display: flex;
@@ -185,13 +180,20 @@ hr {
 }
 
 /* Column Right */
+.column-right {
+    width: calc(100% - 230px);
+    height: 100%;
+    padding: 0 30px 0 20px;
+    overflow-y: auto;
+}
+/* Header */
 header {
     position: fixed;
     z-index: 2;
     right: 0;
     width: calc(100% - 230px);
 	height: 90px;
-    background-color: rgba(1, 1, 1, 0.2);
+    background-color: rgba(1, 1, 1, 0.4);
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -206,7 +208,8 @@ header>a {
     font-size: 12px;
     font-weight: 500;
 }
-
+/* /Header */
+/* Nav */
 nav {
     margin-top: 90px;
 }
@@ -233,9 +236,86 @@ nav>ul>li {
 
 nav>ul>li>a {
     color: #7d7f84;
-    font-weight: 700;
     font-size: 12px;
 }
+/* Nav */
+/* Albums Section */
+div h3 {
+    font-size: 17px;
+}
+div p {
+    color: gray;
+    font-size: 13px;
+}
+section>h2, h3 {
+    color: #fff;
+}
+section>h2:first-child {
+    margin-bottom: 30px;
+}
+
+section>p {
+    margin-top: 10px;
+}
+/* Recently Played */
+.recently-played, .recommended-for-you, .popular-artists{
+    display: flex;
+    margin: 30px 0;
+}
+
+.recently-albums, .recently-albums-you, .more-popular {
+    width: calc((100% / 6) - 15px);
+    margin-right: 15px;
+}
+
+.recently-albums>img, .recommended-for-you>.recently-albums-you>img, .more-popular>img {
+    width: 100%;
+}
+
+.recently-albums>h3, .recently-albums>p, .recently-albums-you>h3, .more-popular>h3, .more-popular>p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.play-hover {
+    position: relative;
+}
+.play-hover>img {
+    width: 100%;
+}
+
+.play-hover>.hover-play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+}
+
+.hover-play, .hover-play>i {
+    display: none;
+}
+
+.hover-play:hover {
+    display: inline;
+}
+
+. {
+    background-color: rgba(1, 1, 1, 0.5);
+}
+
+/* .recently-albums:hover .play-hover, .hover-play {
+    display: inline;
+} */
+
+.more-popular>img {
+    border-radius: 50%;
+}
+/* /Recently Played */
 /* Footer */
 footer {
     display: flex;
@@ -355,13 +435,6 @@ footer {
 }
 /* /Center Footer */
 /* Right Footer */
-/* .right-footer {
-    display: flex;
-    align-items: center;
-    width: 250px;
-    height: 100%;
-    padding: 10px;
-} */
 .right-footer {
     width: 300px;
 }
@@ -379,10 +452,6 @@ footer {
 
 .right-player-footer>ul>li {
     margin: 0 10px;
-}
-
-.right-player-footer>ul>li:last-child {
-    /* margin: 0; */
 }
 
 .right-player-footer {
