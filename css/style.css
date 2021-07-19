@@ -524,6 +524,21 @@ footer {
     }
 }
 
+@media screen and (max-width: 600px) {
+    nav>ul {
+        flex-wrap: wrap;
+    }
+
+    nav>ul>li {
+        padding: 6px 10px;
+    }
+
+    section>h2:first-child {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: 425px) {
     .recently-albums, 
     .recently-albums-you, 
