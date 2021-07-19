@@ -10,7 +10,12 @@ body {
     background-color: #141922;
 }
 
-.side-top>ul>li>a:hover, .playlist-menu>li>a:hover, .side-center>a:hover, .side-bottom>a:hover, nav>ul>li>a:hover, .white-hover:hover {
+.side-top>ul>li>a:hover, 
+.playlist-menu>li>a:hover, 
+.side-center>a:hover, 
+.side-bottom>a:hover, 
+nav>ul>li>a:hover, 
+.white-hover:hover {
     color: #fff;
 }
 
@@ -92,7 +97,6 @@ main {
 }
 /* /Sidebar Top */
 /* Sidebar Center */
-
 .side-center {
     flex-grow: 1;
     overflow: hidden;
@@ -106,11 +110,15 @@ main {
     color: #fff;
 }
 
-.side-center>a {
+#create-new-playlist {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     color: #a3a3a3;
+}
+
+#create-new-playlist:hover .adding-playlist {
+    background-color: #fff;
 }
 
 .adding-playlist {
@@ -193,7 +201,7 @@ header {
     right: 0;
     width: calc(100% - 230px);
 	height: 90px;
-    background-color: rgba(1, 1, 1, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -258,21 +266,31 @@ section>p {
     margin-top: 10px;
 }
 /* Recently Played */
-.recently-played, .recommended-for-you, .popular-artists{
+.recently-played, 
+.recommended-for-you, 
+.popular-artists{
     display: flex;
     margin: 30px 0;
 }
 
-.recently-albums, .recently-albums-you, .more-popular {
+.recently-albums, 
+.recently-albums-you, 
+.more-popular {
     width: calc((100% / 6) - 15px);
     margin-right: 15px;
 }
 
-.recently-albums>img, .recommended-for-you>.recently-albums-you>img, .more-popular>img {
+.recently-albums>img, 
+.recommended-for-you>.recently-albums-you>img, 
+.more-popular>img {
     width: 100%;
 }
 
-.recently-albums>h3, .recently-albums>p, .recently-albums-you>h3, .more-popular>h3, .more-popular>p {
+.recently-albums>h3, 
+.recently-albums>p, 
+.recently-albums-you>h3, 
+.more-popular>h3, 
+.more-popular>p {
     text-align: center;
     margin: 5px 0;
 }
@@ -285,12 +303,27 @@ section>p {
     width: 100%;
 }
 
-.ciccio2>div>i {
-    display: none;
+.recently-albums:hover .hover-play {
+    display: flex;
+    cursor: pointer;
 }
 
-.ciccio:hover {
+.recently-albums-you:hover .hover-play {
     display: flex;
+    cursor: pointer;
+}
+
+.more-popular:hover .hover-play {
+    display: flex;
+    cursor: pointer;
+}
+
+.more-popular>.play-hover>img {
+    border-radius: 50%;
+}
+
+.hover-play {
+    display: none;
     top: 0;
     left: 0;
     font-size: 70px;
@@ -299,12 +332,9 @@ section>p {
     align-items: center;
     width: 100%;
     height: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
 }
-
-.ciccio2:hover {
-    background-color: rgba(1, 1, 2, 0.5);
-}
-
 
 .more-popular>img {
     border-radius: 50%;
@@ -385,6 +415,10 @@ footer {
     font-size: 30px;
 }
 
+#player:hover i {
+    transform: scale(1.2);
+}
+
 .controller-player {
     display: flex;
     align-items: center;
@@ -451,4 +485,98 @@ footer {
 .right-player-footer {
     display: flex;
     align-items: center;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .recently-played,
+    .recommended-for-you,
+    .popular-artists {
+        flex-wrap: wrap;
+    }
+    .recently-albums, 
+    .recently-albums-you, 
+    .more-popular {
+        width: calc((100% / 3) - 15px);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .recently-albums, 
+    .recently-albums-you, 
+    .more-popular {
+        width: calc((100% / 2) - 15px);
+        margin-top: 15px;
+    }
+
+    .column-left {
+        width: 70px;
+    }
+    
+    .side-top>ul>li:first-child {
+        border-left: none;
+    }
+
+    .side-center {
+        display: none;
+    }
+
+    header {
+        width: calc(100% - 70px);
+        justify-content: center;
+    }
+
+    .column-right>nav>ul>li:first-child::after,
+    .logo,
+    .side-center,
+    span {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+    
+    .logo-mobile {
+        display: flex;
+    }
+
+    .logo-mobile>img {
+        padding: 10px;
+        width: 80%;
+    }
+
+    .side-top>ul>li> a>img {
+        width: 50%;
+        vertical-align: unset;
+    }
+
+    .side-center {
+        display: none;
+    }
+    span {
+        display: none;
+    }
+
+    .user-profile>h2 {
+        display: none;
+    }
+
+    .column-right {
+        width: calc(100% - 70px);
+        padding: 0 0 0 20px;
+    }
+
+    nav>ul {
+        flex-wrap: wrap;
+    }
+
+    nav>ul>li {
+        padding-bottom: 15px;
+    }
 }
