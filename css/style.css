@@ -339,6 +339,11 @@ section>p {
 .more-popular>img {
     border-radius: 50%;
 }
+
+.radius50 {
+    border-radius: 50%;
+}
+
 /* /Recently Played */
 /* Footer */
 footer {
@@ -504,6 +509,19 @@ footer {
     .more-popular {
         width: calc((100% / 3) - 15px);
     }
+
+    .transparent-bar {
+        justify-content: center;
+    }
+
+    .right-player-footer {
+        flex-direction: column;
+    }
+
+    .player-list {
+        margin-bottom: 14px;
+        width: 75%;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -547,13 +565,18 @@ footer {
     }
 
     .logo-mobile>img {
-        padding: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
         width: 80%;
     }
 
-    .side-top>ul>li> a>img {
-        width: 50%;
+    .side-top>ul>li>a>img {
+        width: 60%;
         vertical-align: unset;
+    }
+
+    .side-bottom> a>img {
+        width: 26px;
     }
 
     .side-center {
@@ -578,5 +601,31 @@ footer {
 
     nav>ul>li {
         padding-bottom: 15px;
+    }
+
+    .player-icons-left {
+        display: none;
+    }
+
+    .center-footer {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .right-footer {
+        display: none;
+    }
+
+    .player-icons-center>ul>li>a {
+        font-size: 25px;
+    }
+
+    .controller-player {
+        padding-top: 13px;
+    }
+
+    section>h2:first-child {
+        margin: 10px 0;
+        text-align: center;
     }
 }
